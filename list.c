@@ -16,7 +16,7 @@ int main(void)
 
     // Time passes
 
-    int *tmp = malloc(4 * sizeof(int));
+    int *tmp = realloc(list, 4 * sizeof(int));
     if (tmp == NULL)
     {
         return 1;
